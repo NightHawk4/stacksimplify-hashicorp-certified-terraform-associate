@@ -21,3 +21,4 @@
 # 03. Use git commit to apply changes made. This sends tracked files to a staging area which will then be uploaded during the git push command.
 # 04. Use git push to send all local repo changes up to the github cloud. 
 # 05. Don't forget to add credentials before trying to update your github repository. otherwise you won't have permissions to change the github repo.
+# 06. Best to use SSH keys in order to do this if possible.
