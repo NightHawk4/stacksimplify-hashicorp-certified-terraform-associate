@@ -26,7 +26,9 @@
 # Setting up SSH
 01. Setup Keypair
 
-```	ssh-keygen -t rsa - b 4096 -C "email@example.com"
+```
+	ssh-keygen -t rsa - b 4096 -C "email@example.com"
+
 ```
 	
 The file will be saved to /Users/Jay/.ssh/id_rsa or create a new key name file like testkey
@@ -43,16 +45,21 @@ testkey.pub
 	01. Start ssh-agent
 	02. modify .ssh/config file to load all private keys into ssh-agent on startup.
 
-```	Host *
+```	
+
+	Host *
 	AddKeysToAgent yes
 	UseKeyChain yes
 	IdentityFile ~/.ssh/<key file>
+
 ```
 eg. IdentityFile ~/.ssh/testkey
 
 03. Add private key into ssh-agent and store passphrase in the keychain.
 		
-```	ssh-add -K ~/.ssh/<keyfile>
+```
+	ssh-add -K ~/.ssh/<keyfile>
+
 ```
 eg. ssh-add -K ~/.ssh/testkey
 
