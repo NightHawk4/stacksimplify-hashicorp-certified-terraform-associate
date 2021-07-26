@@ -42,14 +42,17 @@ optionally add password for key.
 	01. Start ssh-agent
 	02. modify .ssh/config file to load all private keys into ssh-agent on startup.
 
-		'''Host *
+		Host *
 		AddKeysToAgent yes
 		UseKeyChain yes
-		IdentityFile ~/.ssh/<key file> ''' 
+		IdentityFile ~/.ssh/<key file>
 
 eg. IdentityFile ~/.ssh/testkey
 
 	03. Add private key into ssh-agent and store passphrase in the keychain
-		eg.	'''ssh-add -K ~/.ssh/<keyfile> '''  eg. ssh-add -K ~/.ssh/testkey
+		
+		ssh-add -K ~/.ssh/<keyfile> 
+
+ eg. ssh-add -K ~/.ssh/testkey
 
 
