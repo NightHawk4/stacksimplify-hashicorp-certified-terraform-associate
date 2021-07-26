@@ -24,7 +24,7 @@
 06. Best to use SSH keys in order to do this if possible.
 
 # Setting up SSH
-##01. Setup Keypair
+01. Setup Keypair
 
 	ssh-keygen -t rsa - b 4096 -C "email@example.com"
 	
@@ -32,27 +32,27 @@ The file will be saved to /Users/Jay/.ssh/id_rsa or create a new key name file l
 optionally add password for key.
 
 2 files will be created.
-	testkey 
-&	testkey.pub
+testkey 
+testkey.pub
 
-##02. Copy the pub key to the github repostiory
+02. Copy the pub key to the github repostiory
 	settings / ssh and gpg keys / new ssh key / title it / paste public key here.
 
-##03. Add ssh key to ssh-agent on your laptop
+03. Add ssh key to ssh-agent on your laptop
 	01. Start ssh-agent
 	02. modify .ssh/config file to load all private keys into ssh-agent on startup.
 
-		Host *
-		AddKeysToAgent yes
-		UseKeyChain yes
-		IdentityFile ~/.ssh/<key file>
+	Host *
+	AddKeysToAgent yes
+	UseKeyChain yes
+	IdentityFile ~/.ssh/<key file>
 
 eg. IdentityFile ~/.ssh/testkey
 
-	03. Add private key into ssh-agent and store passphrase in the keychain
+03. Add private key into ssh-agent and store passphrase in the keychain.
 		
-		ssh-add -K ~/.ssh/<keyfile> 
+	ssh-add -K ~/.ssh/<keyfile> 
 
- eg. ssh-add -K ~/.ssh/testkey
+eg. ssh-add -K ~/.ssh/testkey
 
 
