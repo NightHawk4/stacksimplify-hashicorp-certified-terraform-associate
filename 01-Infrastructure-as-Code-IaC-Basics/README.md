@@ -1,3 +1,5 @@
+
+
 # Infrastructure as Code Basics
 
 ## Step-01: Understand Problems with Traditional way of Managing Infrastructure
@@ -11,3 +13,10 @@
 - Scalability
 - Security
 - Audit
+
+# This is my first edit to a file before adding and committing then pushing the repo to the github.
+
+# 01. Edit file.
+# 02. Add file to git for monitoring/tracking using git add . or git add <filname>.
+# 03. Use git commit to apply changes made. This sends tracked files to a staging area which will then be uploaded during the git push command.
+# 04. Use git push to send all local repo changes up to the github cloud. 
