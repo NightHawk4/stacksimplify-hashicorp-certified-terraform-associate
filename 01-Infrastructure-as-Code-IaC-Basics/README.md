@@ -41,11 +41,11 @@ optionally add password for key.
 ##03. Add ssh key to ssh-agent on your laptop
 	01. Start ssh-agent
 	02. modify .ssh/config file to load all private keys into ssh-agent on startup.
-		eg. 	Host *
+		eg.	'''Host *
 			AddKeysToAgent yes
 			UseKeyChain yes
-			IdentityFile ~/.ssh/<key file>  eg. IdentityFile ~/.ssh/testkey
+			IdentityFile ~/.ssh/<key file> ''' eg. IdentityFile ~/.ssh/testkey
 	03. Add private key into ssh-agent and store passphrase in the keychain
-		eg.	ssh-add -K ~/.ssh/<keyfile>   eg. ssh-add -K ~/.ssh/testkey
+		eg.	'''ssh-add -K ~/.ssh/<keyfile> '''  eg. ssh-add -K ~/.ssh/testkey
 
 
