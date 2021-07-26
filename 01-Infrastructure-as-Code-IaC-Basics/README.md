@@ -22,3 +22,30 @@
 # 04. Use git push to send all local repo changes up to the github cloud. 
 # 05. Don't forget to add credentials before trying to update your github repository. otherwise you won't have permissions to change the github repo.
 # 06. Best to use SSH keys in order to do this if possible.
+
+## Setting up SSH
+01. Setup Keypair
+
+	ssh-keygen -t rsa - b 4096 -C "email@example.com"
+	
+The file will be saved to /Users/Jay/.ssh/id_rsa or create a new key name file like testkey
+optionally add password for key.
+
+2 files will be created.
+	testkey 
+&	testkey.pub
+
+02. Copy the pub key to the github repostiory
+	settings / ssh and gpg keys / new ssh key / title it / paste public key here.
+
+03. Add ssh key to ssh-agent on your laptop
+	01. Start ssh-agent
+	02. modify .ssh/config file to load all private keys into ssh-agent on startup.
+		eg. 	Host *
+			AddKeysToAgent yes
+			UseKeyChain yes
+			IdentityFile ~/.ssh/<key file>  eg. IdentityFile ~/.ssh/testkey
+	03. Add private key into ssh-agent and store passphrase in the keychain
+		eg.	ssh-add -K ~/.ssh/<keyfile>   eg. ssh-add -K ~/.ssh/testkey
+
+
