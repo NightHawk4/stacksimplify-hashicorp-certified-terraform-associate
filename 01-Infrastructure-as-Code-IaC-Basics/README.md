@@ -14,17 +14,17 @@
 - Security
 - Audit
 
-# This is my first edit to a file before adding and committing then pushing the repo to the github.
+## This is my first edit to a file before adding and committing then pushing the repo to the github.
 
-# 01. Edit file.
-# 02. Add file to git for monitoring/tracking using git add . or git add <filname>.
-# 03. Use git commit to apply changes made. This sends tracked files to a staging area which will then be uploaded during the git push command.
-# 04. Use git push to send all local repo changes up to the github cloud. 
-# 05. Don't forget to add credentials before trying to update your github repository. otherwise you won't have permissions to change the github repo.
-# 06. Best to use SSH keys in order to do this if possible.
+01. Edit file.
+02. Add file to git for monitoring/tracking using git add . or git add <filname>.
+03. Use git commit to apply changes made. This sends tracked files to a staging area which will then be uploaded during the git push command.
+04. Use git push to send all local repo changes up to the github cloud. 
+05. Don't forget to add credentials before trying to update your github repository. otherwise you won't have permissions to change the github repo.
+06. Best to use SSH keys in order to do this if possible.
 
-## Setting up SSH
-01. Setup Keypair
+# Setting up SSH
+##01. Setup Keypair
 
 	ssh-keygen -t rsa - b 4096 -C "email@example.com"
 	
@@ -35,10 +35,10 @@ optionally add password for key.
 	testkey 
 &	testkey.pub
 
-02. Copy the pub key to the github repostiory
+##02. Copy the pub key to the github repostiory
 	settings / ssh and gpg keys / new ssh key / title it / paste public key here.
 
-03. Add ssh key to ssh-agent on your laptop
+##03. Add ssh key to ssh-agent on your laptop
 	01. Start ssh-agent
 	02. modify .ssh/config file to load all private keys into ssh-agent on startup.
 		eg. 	Host *
