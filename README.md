@@ -1,4 +1,6 @@
 # HashiCorp Certified: Terraform Associate - 50 Practical Demos
+
+[![HIPAA](https://app.soluble.cloud/api/v1/public/badges/d0cfc24a-d54a-42d8-ac92-68e3f8c9400e.svg)](https://app.soluble.cloud/repos/details/github.com/nighthawk4/stacksimplify-hashicorp-certified-terraform-associate)  [![IaC](https://app.soluble.cloud/api/v1/public/badges/1a53af64-f3a3-4061-a414-9575ef9d3563.svg)](https://app.soluble.cloud/repos/details/github.com/nighthawk4/stacksimplify-hashicorp-certified-terraform-associate)  
 [![Image](https://stacksimplify.com/course-images/hashicorp-certified-terraform-associate-highest-rated.png "HashiCorp Certified: Terraform Associate - 50 Practical Demos")](https://links.stacksimplify.com/hashicorp-certified-terraform-associate)
 
 ## Course Modules
