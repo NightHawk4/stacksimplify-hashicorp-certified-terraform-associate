@@ -9,6 +9,9 @@ resource "aws_instance" "my-ec2-vm" {
   tags = {
     "Name" = "Terraform-Cloud-${count.index}"
   }
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 
 

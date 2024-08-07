@@ -13,5 +13,8 @@ resource "aws_instance" "web" {
       tags,
     ]
   }*/
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 

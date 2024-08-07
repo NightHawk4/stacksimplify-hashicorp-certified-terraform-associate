@@ -26,6 +26,9 @@ resource "aws_instance" "my-ec2-vm" {
   count = (var.high_availability == true ? 2 : 1)
   tags = local.common_tags
   availability_zone = var.availability_zones[count.index]
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 
 
