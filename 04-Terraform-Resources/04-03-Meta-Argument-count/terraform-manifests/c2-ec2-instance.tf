@@ -7,4 +7,7 @@ resource "aws_instance" "web" {
     "Name" = "web"
     #"Name" = "web-${count.index}"
   }
+  metadata_options {
+    http_tokens = "required"
+  }
 }
