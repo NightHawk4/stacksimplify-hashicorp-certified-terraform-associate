@@ -17,6 +17,9 @@ resource "aws_instance" "my-ec2-vm" {
   tags = {
     "Name" = "myec2vm"
   }    
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 
 
