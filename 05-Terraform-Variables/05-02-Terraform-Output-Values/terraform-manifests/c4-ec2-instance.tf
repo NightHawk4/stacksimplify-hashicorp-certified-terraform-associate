@@ -18,6 +18,9 @@ resource "aws_instance" "my-ec2-vm" {
   tags = {
     "Name" = "web"
   }
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 
 
