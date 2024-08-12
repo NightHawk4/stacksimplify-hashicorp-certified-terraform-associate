@@ -24,6 +24,9 @@ resource "aws_instance" "my-ec2-vm" {
     working_dir = "local-exec-output-files/"
   }  
 
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 
 
