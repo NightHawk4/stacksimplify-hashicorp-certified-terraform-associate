@@ -29,6 +29,9 @@ provider "aws" {
 resource "aws_instance" "ec2demo" {
   ami           = "ami-04d29b6f966df1537" # Amazon Linux
   instance_type = var.instance_type
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 #####################################################################
 # Block-4: Input Variables Block
