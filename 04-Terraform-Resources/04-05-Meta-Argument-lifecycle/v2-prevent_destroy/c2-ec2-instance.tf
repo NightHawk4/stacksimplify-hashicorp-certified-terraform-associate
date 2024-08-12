@@ -8,5 +8,8 @@ resource "aws_instance" "web" {
   lifecycle {
     prevent_destroy = true # Default is false
   }
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 

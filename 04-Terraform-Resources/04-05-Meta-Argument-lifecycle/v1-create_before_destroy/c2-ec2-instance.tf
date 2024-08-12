@@ -12,4 +12,7 @@ resource "aws_instance" "web" {
     create_before_destroy = true
   }
 */
+  metadata_options {
+    http_tokens = "required"
+  }
 }
